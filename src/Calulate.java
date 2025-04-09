@@ -143,7 +143,7 @@ public class Calulate extends javax.swing.JFrame {
     }//GEN-LAST:event_congBtnActionPerformed
 // Nút phép chia
     private void chiaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaBtnActionPerformed
-      
+      // phong la đã commit
   String n1 = num1Txt.getText();
         String n2 = num2Txt.getText();
 
