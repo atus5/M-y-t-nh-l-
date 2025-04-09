@@ -139,7 +139,21 @@ public class Calulate extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 ////// Nút phép tính cộng
     private void congBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_congBtnActionPerformed
-       
+          String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
+
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+            double sum = num1 + num2;
+
+            String sumS = String.valueOf(sum);
+
+            txtShow.setText(sumS);
+        } catch (NumberFormatException e) {
+
+            txtShow.setText("Vui lòng nhập số hợp lệ");
+        }
     }//GEN-LAST:event_congBtnActionPerformed
 // Nút phép chia
     private void chiaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaBtnActionPerformed
