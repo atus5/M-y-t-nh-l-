@@ -172,7 +172,19 @@ public class Calulate extends javax.swing.JFrame {
     }//GEN-LAST:event_ACbtnActionPerformed
 // Nút phép trừ
     private void truBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_truBtnActionPerformed
-       
+           String n1 = num1Txt.getText();
+         String n2 = num2Txt.getText();
+
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+
+            double result = num1 - num2;
+            txtShow.setText(String.valueOf(result));
+
+        } catch (NumberFormatException ex) {
+            txtShow.setText("Bạn đã nhập sai số, vui lòng nhập lại số.");
+        }
     }//GEN-LAST:event_truBtnActionPerformed
 
     /**
