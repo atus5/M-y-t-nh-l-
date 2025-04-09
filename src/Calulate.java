@@ -139,7 +139,21 @@ public class Calulate extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 ////// Nút phép tính cộng
     private void congBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_congBtnActionPerformed
-       
+          String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
+
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+            double sum = num1 + num2;
+
+            String sumS = String.valueOf(sum);
+
+            txtShow.setText(sumS);
+        } catch (NumberFormatException e) {
+
+            txtShow.setText("Vui lòng nhập số hợp lệ");
+        }
     }//GEN-LAST:event_congBtnActionPerformed
 // Nút phép chia
     private void chiaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaBtnActionPerformed
@@ -164,7 +178,13 @@ public class Calulate extends javax.swing.JFrame {
     }//GEN-LAST:event_chiaBtnActionPerformed
 // Nút phép nhân
     private void nhanBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nhanBtnActionPerformed
-      
+        try {
+        double so1 = Double.parseDouble(txtSo1.getText());
+        double so2 = Double.parseDouble(txtSo2.getText());
+        double ketQua = so1 * so2;
+        txtKetQua.setText(String.valueOf(ketQua));
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập đúng định dạng số.", "Lỗi", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_nhanBtnActionPerformed
 // AC button
     private void ACbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ACbtnActionPerformed
