@@ -144,7 +144,23 @@ public class Calulate extends javax.swing.JFrame {
 // Nút phép chia
     private void chiaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaBtnActionPerformed
       
+  String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
 
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+
+            if (num2 == 0) {
+                txtShow.setText("Không thể chia cho 0 ");
+            } else {
+                double result = num1 / num2;
+                txtShow.setText(String.valueOf(result));
+            }
+
+        } catch (NumberFormatException ex) {
+            txtShow.setText("Vui lòng nhập số hợp lệ ");
+        }
     }//GEN-LAST:event_chiaBtnActionPerformed
 // Nút phép nhân
     private void nhanBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nhanBtnActionPerformed
