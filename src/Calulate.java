@@ -193,7 +193,7 @@ public class Calulate extends javax.swing.JFrame {
 // Nút phép trừ
     private void truBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_truBtnActionPerformed
         String n1 = num1Txt.getText();
-         String n2 = num2Txt.getText();
+        String n2 = num2Txt.getText();
 
         try {
             double num1 = Double.parseDouble(n1);
