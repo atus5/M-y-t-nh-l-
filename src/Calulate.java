@@ -139,12 +139,42 @@ public class Calulate extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 ////// Nút phép tính cộng
     private void congBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_congBtnActionPerformed
-       
+          String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
+
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+            double sum = num1 + num2;
+
+            String sumS = String.valueOf(sum);
+
+            txtShow.setText(sumS);
+        } catch (NumberFormatException e) {
+
+            txtShow.setText("Vui lòng nhập số hợp lệ");
+        }
     }//GEN-LAST:event_congBtnActionPerformed
 // Nút phép chia
     private void chiaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chiaBtnActionPerformed
       
+  String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
 
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+
+            if (num2 == 0) {
+                txtShow.setText("Không thể chia cho 0 ");
+            } else {
+                double result = num1 / num2;
+                txtShow.setText(String.valueOf(result));
+            }
+
+        } catch (NumberFormatException ex) {
+            txtShow.setText("Vui lòng nhập số hợp lệ ");
+        }
     }//GEN-LAST:event_chiaBtnActionPerformed
 // Nút phép nhân
     private void nhanBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nhanBtnActionPerformed
@@ -168,7 +198,19 @@ public class Calulate extends javax.swing.JFrame {
     }//GEN-LAST:event_ACbtnActionPerformed
 // Nút phép trừ
     private void truBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_truBtnActionPerformed
-       
+        String n1 = num1Txt.getText();
+        String n2 = num2Txt.getText();
+
+        try {
+            double num1 = Double.parseDouble(n1);
+            double num2 = Double.parseDouble(n2);
+
+            double result = num1 - num2;
+            txtShow.setText(String.valueOf(result));
+
+        } catch (NumberFormatException ex) {
+            txtShow.setText("Bạn đã nhập sai số, vui lòng nhập lại số.");
+        }
     }//GEN-LAST:event_truBtnActionPerformed
 
     /**
