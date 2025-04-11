@@ -245,8 +245,12 @@ public class Calulate extends javax.swing.JFrame {
             public void run() {
                 new Calulate().setVisible(true);
             }
+       
         });
+        
     }
+   
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ACbtn;
