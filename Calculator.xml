@@ -3,7 +3,7 @@
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
   <jar>F:\SVN Sever\clone project\New folder\M-y-t-nh-l-\dist\M_y-T_nh-L_.jar</jar>
-  <outfile>F:\SVN Sever\clone project\New folder\M-y-t-nh-l-\src\tudepchai.exe</outfile>
+  <outfile>F:\SVN Sever\clone project\New folder\M-y-t-nh-l-\src\Calculator.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon></icon>
+  <icon>F:\Downloads\faifai.ico</icon>
   <jre>
     <path>%JAVA_HOME%;%PATH%</path>
     <requiresJdk>false</requiresJdk>
